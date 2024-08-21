@@ -1,0 +1,50 @@
+---
+title: "ReadMe"
+author: "Mrinal Bamhotra, Rintu Kutum"
+date: "`r Sys.Date()`"
+output: html_document
+---
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# genomicdatafetch
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of genomicdatafetch is to fetch the genomic metadata from various NCBI databases which is to be chosen by the user.
+
+## Installation
+
+You can install the development version of genomicdatafetch by:
+
+```r
+
+#install.packages(devtools)
+#devtools::install_github("mrinalbamhotra/genomicdatafetch")
+
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(genomicdatafetch)
+## basic example code
+# Call the fetch_ncbi_data() function which is inside the genomicdatafetch package and it will ask you from which NCBI database you want data and next enter the accession no. or the UID and the results will get displayed.
+# After the metadata is fetched it will again ask for the UID to get the linked databases for the metadata
+```
+
